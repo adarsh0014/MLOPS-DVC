@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd # type: ignore
 import os 
 
 
@@ -15,9 +15,9 @@ df = pd.DataFrame(data_set)
 new_row_loc = {'name': 'GF1', 'age': 20, 'batch': 2034}
 df.loc[len(df.index)] = new_row_loc
 
-# # for version 3 data add
-# new_row_loc = {'name': 'GF2', 'age': 30, 'batch': 2014}
-# df.loc[len(df.index)] = new_row_loc
+# for version 3 data add
+new_row_loc = {'name': 'GF2', 'age': 30, 'batch': 2014}
+df.loc[len(df.index)] = new_row_loc
 
 
 folder_name = 'data'
